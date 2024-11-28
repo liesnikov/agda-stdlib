@@ -1,6 +1,8 @@
-AGDA_EXEC ?= agda
-AGDA_OPTIONS=-Werror
-AGDA_RTS_OPTIONS=+RTS -M4.0G -H3.5G -A128M -RTS
+AGDA_EXEC ?=agda-2.8.0
+#AGDA_OPTIONS=-Werror
+AGDA_OPTIONS=-Werror --profile=caching --profile=cachezerovar --profile=cachenocontx
+#AGDA_OPTIONS=--profile=caching -Werror
+AGDA_RTS_OPTIONS=+RTS -A128M -RTS
 AGDA=$(AGDA_EXEC) $(AGDA_OPTIONS) $(AGDA_RTS_OPTIONS)
 
 # Before running `make test` the `fix-whitespace` program should
@@ -32,4 +34,5 @@ listings: Everything.agda
 
 clean :
 	find . -type f -name '*.agdai' -delete
+	rm -rf _build
 	rm -f Everything.agda EverythingSafe.agda

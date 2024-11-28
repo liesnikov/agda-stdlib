@@ -1,1 +1,16 @@
 .travis.yml merge=ours
+data-integer-properties-allzero-noctx.txt filter=lfs diff=lfs merge=lfs -text
+function-base-cache.txt filter=lfs diff=lfs merge=lfs -text
+stats.txt filter=lfs diff=lfs merge=lfs -text
+data-bool-properties-allzero-noctx.txt filter=lfs diff=lfs merge=lfs -text
+data-bool-properties-nozero-yesctx.txt filter=lfs diff=lfs merge=lfs -text
+agda.eventlog.json filter=lfs diff=lfs merge=lfs -text
+output.txt filter=lfs diff=lfs merge=lfs -text
+agda.prof filter=lfs diff=lfs merge=lfs -text
+data-bool-properties-nozero-noctx.txt filter=lfs diff=lfs merge=lfs -text
+agda-data.eventlog.json filter=lfs diff=lfs merge=lfs -text
+agda.eventlog filter=lfs diff=lfs merge=lfs -text
+out-tc50.txt filter=lfs diff=lfs merge=lfs -text
+stdlib-stats.txt filter=lfs diff=lfs merge=lfs -text
+data-bool-properties-allzero-yesctx.txt filter=lfs diff=lfs merge=lfs -text
+out-tc50-caching.txt filter=lfs diff=lfs merge=lfs -text
